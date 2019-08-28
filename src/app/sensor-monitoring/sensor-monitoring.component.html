@@ -1,122 +1,31 @@
-<!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+<div class="container-fluid">
 
 
+  <h2>AIR</h2>
+  <div class="col-md-1">
+    <p >gas: {{ air.gas }}</p>
+    <p>fan: {{ air.fan }}</p>
+    <p>humidity: {{ air.hum }}</p>
+    <p>temperature: {{ air.temp }}</p>
+    <p>Temperature Setpoint: {{air.settemp}} </p>
+  </div>
 
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-  </ng-container>
+  <h2>WATER</h2>
+  <div class="col-md-2">
+    <p>EC: {{ water.EC }}</p>
+    <p>PH: {{ water.PH }}</p>
+    <p>Flow: {{ water.flow }}</p>
+    <p>Pump: {{ water.pump }}</p>
+    <p>Temperature: {{ water.temp }}</p>
+    <p>Temperature Setpoint: {{water.settemp}}</p>
+    <p>Flow Setpoint: {{water.setflow}}</p>
+  </div>
 
+    <h2>LIGHT</h2>
+    <div class="col-md-3">
+      <p>Light Intensity: {{ light.lux }}</p>
+      <p>Light Setpoint: {{ light.setIO }}</p>
 
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-  </ng-container>
-
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> Weight </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table> -->
-<mat-toolbar color='warn'>
-    <span>Air Sensor</span>
-  </mat-toolbar>
-<div class="tab">
-
-  <table class='table'>
-    <thead>
-    <tr>
-    <td>Gas</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let Gas of airGasList | async">
-    <td>{{Gas}}</td>
-    </tr>
-    </tbody>
-    </table>
-    <table class='table'>
-      <thead>
-      <tr>
-      <td>Humidity</td>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let Hum of airHum">
-      <td>{{Hum}}</td>
-      </tr>
-      </tbody>
-      </table>
-      <table class='table'>
-        <thead>
-        <tr>
-        <td>Temperature</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let Temp of airTemp">
-        <td>{{Temp}}</td>
-        </tr>
-        </tbody>
-        </table>
-</div>
-
-<mat-toolbar color='warn'>
-    <span>Water Sensor</span>
-  </mat-toolbar>
-<div class="tab">
-
-  <table class='table'>
-    <thead>
-    <tr>
-    <td>Flow</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let Flow of waterFlow">
-    <td>{{Flow}}</td>
-    </tr>
-    </tbody>
-    </table>
-    <table class='table'>
-      <thead>
-      <tr>
-      <td>Temp</td>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let Temp of waterTemp">
-      <td>{{Temp}}</td>
-      </tr>
-      </tbody>
-      </table>
-</div>
-
-<mat-toolbar color='warn'>
-    <span>Light Sensor</span>
-  </mat-toolbar>
-<div class="tab">
-
-  <table class='table'>
-    <thead>
-    <tr>
-    <td>Lux</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let Lux of lightLux">
-    <td>{{Lux}}</td>
-    </tr>
-    </tbody>
-    </table>
+    </div>
 </div>
