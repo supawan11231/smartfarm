@@ -18,6 +18,8 @@ import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig} from '../environments/firebase.config';
 import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
 import { from } from 'rxjs';
+import { AngularMaterialModule } from './angular-material.module';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,7 +36,8 @@ import { from } from 'rxjs';
     DashboardModule,
     SensorMonitoringModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularMaterialModule
   ],
   providers: [AngularFireDatabase],
   bootstrap: [AppComponent]

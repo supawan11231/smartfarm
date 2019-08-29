@@ -39,3 +39,39 @@ mat-toolbar{
   width: 90%;
   height: 50px;
 }
+
+
+mat-card{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  vertical-align: bottom;
+}
+
+p{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.Val{
+  font-size: 50px;
+  padding-top: 15px;
+  line-height: 75px;
+}
+.Key{
+  margin-top: 15px;
+}
+
+.shell{
+  margin: 50px;
+  display: inline-block;
+}
+
+.group{
+  display: block;
+  box-align: center;
+}

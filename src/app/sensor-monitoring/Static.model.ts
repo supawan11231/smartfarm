@@ -2,7 +2,7 @@ export interface AIR {
     fan: number;
     gas: string;
     hum: string;
-    setTemp: number;
+    settemp: number;
     temp: string;
 }
 export interface Light {

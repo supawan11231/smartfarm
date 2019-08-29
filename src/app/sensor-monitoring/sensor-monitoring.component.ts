@@ -49,7 +49,7 @@ export class SensorMonitoringComponent implements OnInit {
 
     this.datas.snapshotChanges().subscribe(action => {
       this.data = action.payload.val()
-      console.log(this.data)
+      console.log(JSON.stringify(this.data))
     })
 
   }

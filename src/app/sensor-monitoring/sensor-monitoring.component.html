@@ -1,31 +1,78 @@
 
-<div class="container-fluid">
+<div class="shell">
 
 
-  <h2>AIR</h2>
-  <div class="col-md-1">
-    <p >gas: {{ air.gas }}</p>
-    <p>fan: {{ air.fan }}</p>
-    <p>humidity: {{ air.hum }}</p>
-    <p>temperature: {{ air.temp }}</p>
-    <p>Temperature Setpoint: {{air.settemp}} </p>
+  <div class="section">
+<h2>AIR</h2>
+<mat-card>
+  <p class="Val">{{ air.gas }}</p>
+  <p class="Key">GAS</p>
+</mat-card>
+<mat-card>
+    <p class="Val">{{ air.fan }}</p>
+    <p class="Key">FAN</p>
+</mat-card>
+<mat-card>
+  <p class="Val">{{ air.hum }}</p>
+  <p class="Key">HUMIDITY</p>
+</mat-card>
+<mat-card>
+  <p class="Val">{{ air.temp }}</p>
+  <p class="Key">Temperature</p>
+</mat-card>
+<mat-card>
+    <p class="Val">{{ air.settemp }}</p>
+    <p class="Key">Temperature Setpoint</p>
+</mat-card>
   </div>
-
+<div class="section">
   <h2>WATER</h2>
-  <div class="col-md-2">
-    <p>EC: {{ water.EC }}</p>
-    <p>PH: {{ water.PH }}</p>
-    <p>Flow: {{ water.flow }}</p>
-    <p>Pump: {{ water.pump }}</p>
-    <p>Temperature: {{ water.temp }}</p>
-    <p>Temperature Setpoint: {{water.settemp}}</p>
-    <p>Flow Setpoint: {{water.setflow}}</p>
+  <mat-card>
+    <p class="Val">{{ water.EC }}</p>
+    <p class="Key">EC</p>
+  </mat-card>
+  <mat-card>
+    <p class="Val">{{ water.PH }}</p>
+    <p class="Key">PH</p>
+  </mat-card>
+  <mat-card>
+    <p class="Val">{{ water.flow }}</p>
+    <p class="Key">WATER FLOW</p>
+  </mat-card>
+  <mat-card>
+    <p class="Val">{{ water.pump }}</p>
+    <p class="Key">PUMP</p>
+  </mat-card>
+  <mat-card>
+    <p class="Val">{{ water.temp }}</p>
+    <p class="Key">WATER TEMPERATURE</p>
+  </mat-card>
+    <mat-card>
+      <p class="Val">{{water.settemp}}</p>
+      <p class="Key">TEMPERATURE SETPOINT</p>
+    </mat-card>
+        <mat-card>
+          <p class="Val">{{water.setflow}}</p>
+          <p class="Key">WATER FLOW SETPOINT</p>
+        </mat-card>
   </div>
 
-    <h2>LIGHT</h2>
-    <div class="col-md-3">
-      <p>Light Intensity: {{ light.lux }}</p>
-      <p>Light Setpoint: {{ light.setIO }}</p>
 
+
+
+  <div class="section">
+    <h2>LIGHT</h2>
+    <div class="group">
+    <mat-card>
+      <p class="Val">{{ light.lux }}</p>
+      <p class="Key">LIGHT INTENSITY</p>
+    </mat-card>
+    <mat-card>
+      <p class="Val">{{ light.setIO }}</p>
+      <p class="Key">LIGHT SETPOINT</p>
+    </mat-card>
     </div>
+
+  </div>
+
 </div>
